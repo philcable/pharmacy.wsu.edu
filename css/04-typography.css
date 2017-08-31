@@ -1,0 +1,89 @@
+main {
+	color: #4a4a4a;
+}
+
+main p,
+main ol,
+main ul {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	padding-bottom: 1.8em;
+}
+
+main ol,
+main ul {
+	padding: 1em 0 1.4em 3em;
+}
+
+p + ul,
+p + ol {
+	padding-top: 0;
+}
+
+main ul li {
+	position: relative;
+	list-style: none;
+}
+
+main ul li:before {
+	content: "";
+	position: absolute;
+	left: -1.25em;
+	top: 8px;
+	background: #a31d36;
+	height: 1px;
+	width: 8px;
+}
+
+.intro-text {
+	font-size: 20px;
+	line-height: 32px;
+}
+
+main a {
+	color: #4a4a4a;
+	border-bottom: 1px solid #fa5735;
+}
+
+main a:hover,
+main a:focus {
+	color: #ca1237;
+	border-color: #ca1237;
+}
+
+h1 {
+	color: #a31d36;
+	font-size: 52px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+h2 {
+	color: #a31d36;
+	font-size: 36px;
+	font-weight: 300;
+	letter-spacing: .5px;
+	padding-top: .8em;
+	padding-bottom: .7em;
+}
+
+h3 {
+	color: #262626;
+	font-size: 26px;
+	font-weight: 600;
+	padding-top: 1em;
+	padding-bottom: .6em;
+}
+
+h4 {
+	color: #262626;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: .4px;
+	text-transform: uppercase;
+	padding-top: .8em;
+	padding-bottom: .8em;
+}
