@@ -1,4 +1,4 @@
-footer.main-footer {
+footer.site-footer {
 	background: #4c4c4c;
 	color: #fff;
 	font-weight: 300;
@@ -11,11 +11,11 @@ footer.main-footer {
 	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 
-footer.main-footer a {
+footer.site-footer a {
 	color: #fff;
 }
 
-footer.main-footer header {
+footer.site-footer header {
 	font-size: 16px;
 	letter-spacing: 2px;
 	line-height: 0;
@@ -27,7 +27,7 @@ footer.main-footer header {
 	text-align: center;
 }
 
-footer.main-footer nav {
+footer.site-footer nav {
 	flex: 2;
 	padding-top: 1em;
 	height: 60px;
@@ -35,31 +35,31 @@ footer.main-footer nav {
 	max-width: 500px;
 }
 
-footer.main-footer nav ul {
+footer.site-footer nav ul {
 	display: flex;
 	justify-content: space-evenly;
 	padding-left: 0;
 	padding-top: .5em;
 }
 
-footer.main-footer ul li:before {
+footer.site-footer ul li:before {
 	display: none;
 }
 
-footer.main-footer ul li {
+footer.site-footer ul li {
 	padding-left: 0;
 }
 
-footer.main-footer ul li a {
+footer.site-footer ul li a {
 	border-bottom: 0;
 }
 
-footer.main-footer ul li a:hover {
+footer.site-footer ul li a:hover {
 	color: #ca1237;
 }
 
 
-footer.main-footer .social {
+footer.site-footer .social {
 	height: 60px;
 	display: flex;
 	flex: 1;
@@ -68,14 +68,14 @@ footer.main-footer .social {
 	margin-right: 4em;
 }
 
-footer.main-footer .social a svg {
+footer.site-footer .social a svg {
 	fill: #736d6d;
 	display: block;
 	border: 1px solid #4c4c4c;
 	margin-right: 1em;
 }
 
-footer.main-footer .social a:hover .social-icon {
+footer.site-footer .social a:hover .social-icon {
 	background: #fff;
 	border: 1px solid #fff;
 	border-radius: 50px;
@@ -83,21 +83,21 @@ footer.main-footer .social a:hover .social-icon {
 	height: 30px;
 }
 
-footer.main-footer .social a svg:hover #facebook {
+footer.site-footer .social a svg:hover #facebook {
 	fill: #3b5998;
 }
 
-footer.main-footer .social a svg:hover #youtube {
+footer.site-footer .social a svg:hover #youtube {
 	fill: #ce1312;
 }
 
-footer.main-footer .social a svg:hover #twitter {
+footer.site-footer .social a svg:hover #twitter {
 	fill: #55acee;
 }
 
 @media (min-width: 990px) {
 
-	.main-footer {
+	.site-footer {
 		margin-left: 198px;
 		max-width: calc(100vw - 198px);
 	}
@@ -105,14 +105,14 @@ footer.main-footer .social a svg:hover #twitter {
 
 @media (min-width: 1386px) {
 
-	.main-footer {
+	.site-footer {
 		max-width: calc(1386px - 198px - 4px);
 	}
 }
 
 @media (max-width: 1150px) {
 
-	footer.main-footer header {
+	footer.site-footer header {
 		font-size: 12px;
 		font-weight: 500;
 		padding-top: 1.2em;
@@ -121,14 +121,14 @@ footer.main-footer .social a svg:hover #twitter {
 
 @media (max-width: 890px) {
 
-	footer.main-footer .social {
+	footer.site-footer .social {
 		display: none;
 	}
 }
 
 @media (max-width: 639px) {
 
-	footer.main-footer header {
+	footer.site-footer header {
 		display: none;
 	}
 }

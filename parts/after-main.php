@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="site-footer">
  <header><?php echo get_bloginfo( 'name' ); ?></header>
  <nav class="footer-nav">
 	 <?php
