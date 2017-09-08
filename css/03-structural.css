@@ -5,4 +5,16 @@ body {
 main {
 	background: #fff;
 	border-right: 4px solid #f2f2f2;
+	margin-bottom: 63px;
+}
+
+.background-gray {
+	background-color: #f2f2f2;
+	color: #262626;
+	min-height: 250px;
+}
+
+.margin-vertical {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }

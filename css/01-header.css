@@ -1,13 +1,14 @@
 .main-header {
 	background-color: transparent;
 	border-top: solid 5px #a31d36;
+	max-width: calc(1386px - 198px);
 }
 
 .main-header .header-group {
 	position: relative;
 	margin-top: 20px;
 	width: 100%;
-	max-width: 1050px;
+	float: right;
 }
 
 .main-header sub {

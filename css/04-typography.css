@@ -80,10 +80,33 @@ h3 {
 
 h4 {
 	color: #262626;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 600;
 	letter-spacing: .4px;
 	text-transform: uppercase;
 	padding-top: .8em;
 	padding-bottom: .8em;
+}
+
+aside h4 {
+	padding-bottom: 0;
+	padding-left: .5em;
+	font-weight: 400;
+}
+
+aside header {
+	font-size: 15px;
+	letter-spacing: .5px;
+	color: #c7c7c7;
+	border-bottom: 5px solid #f2f2f2;
+	padding: 0 0 .2em .5em;
+	margin-bottom: .4em;
+}
+
+aside ul li {
+	padding-bottom: 0;
+}
+
+.img-mid-feature + h2 {
+	padding-top: 0;
 }

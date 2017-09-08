@@ -1,10 +1,14 @@
 footer.main-footer {
 	background: #4c4c4c;
 	color: #fff;
+	font-weight: 300;
 	display: flex;
-	height: 80px;
+	height: 60px;
 	width: 100%;
 	flex-direction: row;
+	position: fixed;
+	bottom: 0;
+	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 
 footer.main-footer a {
@@ -12,13 +16,12 @@ footer.main-footer a {
 }
 
 footer.main-footer header {
-	flex: 1;
 	font-size: 16px;
 	letter-spacing: 2px;
 	line-height: 0;
 	font-weight: 300;
 	text-transform: uppercase;
-	padding: 1em 1em .7em 0;
+	padding: .7em 1em .7em 0;
 	margin: 1.3em 0 1.3em 4em;
 	border-right: 1px solid #736d6d;
 	text-align: center;
@@ -27,7 +30,8 @@ footer.main-footer header {
 footer.main-footer nav {
 	flex: 3;
 	padding-top: 1em;
-	height: 80px;
+	height: 60px;
+	letter-spacing: .5px;
 }
 
 footer.main-footer .social {
@@ -36,8 +40,9 @@ footer.main-footer .social {
 
 footer.main-footer nav ul {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	padding-left: 0;
+	padding-top: .5em;
 }
 
 footer.main-footer ul li:before {
@@ -50,4 +55,58 @@ footer.main-footer ul li {
 
 footer.main-footer ul li a {
 	border-bottom: 0;
+}
+
+footer.main-footer ul li a:hover {
+	color: #ca1237;
+}
+
+footer.main-footer .social {
+	height: 60px;
+	display: flex;
+	flex: 1;
+	justify-content: space-evenly;
+	padding-top: 1em;
+	margin-right: 4em;
+}
+
+footer.main-footer .social a svg {
+	fill: #736d6d;
+	display: block;
+	border: 1px solid #4c4c4c;
+}
+
+footer.main-footer .social a:hover .social-icon {
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+}
+
+footer.main-footer .social a svg:hover #facebook {
+	fill: #3b5998;
+}
+
+footer.main-footer .social a svg:hover #youtube {
+	fill: #ce1312;
+}
+
+footer.main-footer .social a svg:hover #twitter {
+	fill: #55acee;
+}
+
+@media (min-width: 990px) {
+
+	.main-footer {
+		margin-left: 198px;
+		max-width: calc(100vw - 198px);
+	}
+}
+
+@media (min-width: 1386px) {
+
+	.main-footer {
+		max-width: calc(1386px - 198px - 4px);
+	}
 }
