@@ -191,7 +191,7 @@ aside header {
 }
 
 aside ul li {
-	padding-bottom: 0;
+	padding-bottom: .4em;
 }
 
 .img-mid-feature + h2 {
@@ -230,7 +230,151 @@ aside ul li {
 	background-attachment: fixed;
 }
 
+figure a {
+	border-bottom: none;
+}
 
+footer.article-footer {
+	border-top: 1px solid #f2f2f2;
+}
+
+h2.article-title {
+	padding-bottom: .4em;
+}
+
+.article-header hgroup.source,
+.article-header .hgroup.source,
+.article header cite a,
+footer.article-footer {
+	color: #737373;
+}
+
+.article-header hgroup.source,
+.article-header .hgroup.source {
+	padding-bottom: 2.4em;
+}
+
+aside.widget {
+	margin: 2em 0;
+}
+
+figure.article-thumbnail {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+article.type-post {
+	padding-bottom: 2.5em;
+}
+
+figure.featured-image {
+	height: 415px;
+}
+
+.single-post.has-featured-image header.article-header hgroup h1.article-title {
+	padding-top: 1em;
+}
+
+.single-post header.article-header hgroup h1.article-title {
+	margin-bottom: 0;
+}
+
+form {
+	margin: 0; /* Reset the spine's form */
+	padding: 0; /* Reset the spine's form */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+	background: #f2f2f2;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 2px solid #cbcbcb;
+	border-left: 0;
+	border-radius: 0;
+	padding: 1em;
+	font-size: 14px;
+	color: #262626;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+	box-shadow: none;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 2px solid #ececec;
+	border-left: 0;
+	border-radius: 0;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: #fa5735;
+	border: 0;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 0;
+	line-height: normal;
+	padding: 1em;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #ca1237;
+	color: #fff;
+}
+
+.widget form div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.widget form div input {
+	margin-top: .5em;
+}
+
+.widget input[type="text"] {
+	margin-right: .4em;
+	-webkit-box-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+}
+
+.widget input[type="submit"] {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.tablepress tbody td,
+.tablepress tfoot th {
+	border-top: 1px solid #f2f2f2;
+}
+
+.tablepress tfoot th,
+.tablepress thead th {
+	background: transparent;
+	text-transform: uppercase;
+}
+
+.tablepress tbody {
+	margin-bottom: 2em;
+}
 
 footer.site-footer {
 	background: #4c4c4c;

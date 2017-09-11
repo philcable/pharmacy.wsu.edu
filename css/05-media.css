@@ -29,3 +29,7 @@
 .img-attached {
 	background-attachment: fixed;
 }
+
+figure a {
+	border-bottom: none;
+}

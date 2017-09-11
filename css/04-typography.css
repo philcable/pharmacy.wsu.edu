@@ -104,7 +104,7 @@ aside header {
 }
 
 aside ul li {
-	padding-bottom: 0;
+	padding-bottom: .4em;
 }
 
 .img-mid-feature + h2 {
