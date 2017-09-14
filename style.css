@@ -376,6 +376,12 @@ input[type="submit"]:hover {
 	margin-bottom: 2em;
 }
 
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select,
+.gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select,
+.gform_wrapper.gf_browser_chrome .ginput_complex select {
+	height: 30px;
+}
+
 footer.site-footer {
 	background: #4c4c4c;
 	color: #fff;
@@ -526,6 +532,28 @@ footer.site-footer .social a svg:hover #twitter {
 
 	footer.site-footer header {
 		display: none;
+	}
+}
+
+@media (max-width: 790px) {
+
+	main h1 {
+		font-size: 48px;
+	}
+
+	main h2 {
+		word-break: break-all;
+	}
+
+	.img-mid-feature {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 440px) {
+
+	main h1 {
+		font-size: 42px;
 	}
 }
 /*# sourceMappingURL=style.css.map */

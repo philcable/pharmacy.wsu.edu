@@ -87,3 +87,9 @@ input[type="submit"]:hover {
 .tablepress tbody {
 	margin-bottom: 2em;
 }
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select,
+.gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select,
+.gform_wrapper.gf_browser_chrome .ginput_complex select {
+	height: 30px;
+}
