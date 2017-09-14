@@ -292,7 +292,7 @@ textarea {
 	background: #f2f2f2;
 	border-top: 0;
 	border-right: 0;
-	border-bottom: 2px solid #cbcbcb;
+	border-bottom: 1px solid #cbcbcb;
 	border-left: 0;
 	border-radius: 0;
 	padding: 1em;
@@ -307,7 +307,7 @@ textarea:focus {
 	box-shadow: none;
 	border-top: 0;
 	border-right: 0;
-	border-bottom: 2px solid #ececec;
+	border-bottom: 1px solid #ececec;
 	border-left: 0;
 	border-radius: 0;
 }
@@ -376,10 +376,38 @@ input[type="submit"]:hover {
 	margin-bottom: 2em;
 }
 
+.gform_wrapper h3.gform_title {
+	color: #a31d36;
+	font-size: 36px;
+	font-weight: 300;
+	letter-spacing: .5px;
+	padding-top: .8em;
+	padding-bottom: .7em;
+}
+
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select,
 .gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select,
 .gform_wrapper.gf_browser_chrome .ginput_complex select {
 	height: 30px;
+}
+
+.gform_wrapper .top_label .gfield_label {
+	font-size: 1.2em;
+}
+
+.gform_wrapper ul.gfield_checkbox li label,
+.gform_wrapper ul.gfield_radio li label {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.gform_wrapper .gf_progressbar_percentage,
+.gform_wrapper .gf_progressbar {
+	border-radius: 10px;
+}
+
+.gform_wrapper .percentbar_blue {
+	background-color: #a31d36;
 }
 
 footer.site-footer {
