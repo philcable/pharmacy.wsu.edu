@@ -1,6 +1,6 @@
 <footer class="site-footer">
 
-	<header><?php echo get_bloginfo( 'name' ); ?></header>
+	<header><?php echo esc_html( get_bloginfo( 'name' ) ); ?></header>
 
 	<nav class="footer-nav">
 		<?php
