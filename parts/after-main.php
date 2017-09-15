@@ -9,6 +9,7 @@
 			'container' => false,
 			'container_class' => false,
 			'container_id' => false,
+			'fallback_cb' => false,
 			'menu_class' => null,
 			'menu_id' => null,
 			'items_wrap' => '<ul>%3$s</ul>',
