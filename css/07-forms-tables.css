@@ -73,19 +73,35 @@ input[type="submit"]:hover {
 	flex: 1;
 }
 
+table tbody td,
+table tfoot th,
 .tablepress tbody td,
 .tablepress tfoot th {
 	border-top: 1px solid #f2f2f2;
 }
 
+table tfoot th,
+table thead th,
 .tablepress tfoot th,
 .tablepress thead th {
 	background: transparent;
 	text-transform: uppercase;
 }
 
+table tbody,
 .tablepress tbody {
 	margin-bottom: 2em;
+}
+
+.background-gray table tbody td,
+.background-gray table tfoot th,
+.background-gray .tablepress tbody td,
+.background-gray .tablepress tfoot th {
+	border-top: 1px solid #736d6d;
+}
+
+.background-gray .tablepress thead th {
+	border-bottom: 1px solid #736d6d;
 }
 
 .gform_wrapper h3.gform_title {
@@ -97,16 +113,19 @@ input[type="submit"]:hover {
 	padding-bottom: .7em;
 }
 
-.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select,
-.gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select,
-.gform_wrapper.gf_browser_chrome .ginput_complex select {
+form select,
+.gform_wrapper ul.gform_fields li.gfield select,
+.gform_wrapper .ginput_complex .ginput_right select,
+.gform_wrapper .ginput_complex select {
 	height: 30px;
 }
 
+form label,
 .gform_wrapper .top_label .gfield_label {
 	font-size: 1.2em;
 }
 
+form ul li label,
 .gform_wrapper ul.gfield_checkbox li label,
 .gform_wrapper ul.gfield_radio li label {
 	font-weight: 400;

@@ -157,6 +157,10 @@ h2 {
 	padding-bottom: .7em;
 }
 
+.background-gray h2 {
+	color: #262626;
+}
+
 h3 {
 	color: #262626;
 	font-size: 26px;
@@ -184,18 +188,39 @@ aside h4 {
 aside header {
 	font-size: 15px;
 	letter-spacing: .5px;
-	color: #767572;
+	color: #736d6d;
 	border-bottom: 5px solid #f2f2f2;
 	padding: 0 0 .2em .5em;
 	margin-bottom: .4em;
+}
+
+aside ul {
+	padding-bottom: .5em;
 }
 
 aside ul li {
 	padding-bottom: .4em;
 }
 
+.background-gray aside header {
+	border-bottom: 5px solid #736d6d;
+}
+
 .img-mid-feature + h2 {
 	padding-top: 0;
+}
+
+blockquote {
+	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	border-left: 5px solid #f2f2f2;
+	padding-bottom: 0;
+	margin: 1em 0 2.2em 1em;
+}
+
+blockquote p {
+	font-size: 1.2rem;
+	color: #4c4c4c;
+	padding-bottom: 0;
 }
 
 .bleed-right {
@@ -372,19 +397,35 @@ input[type="submit"]:hover {
 	        flex: 1;
 }
 
+table tbody td,
+table tfoot th,
 .tablepress tbody td,
 .tablepress tfoot th {
 	border-top: 1px solid #f2f2f2;
 }
 
+table tfoot th,
+table thead th,
 .tablepress tfoot th,
 .tablepress thead th {
 	background: transparent;
 	text-transform: uppercase;
 }
 
+table tbody,
 .tablepress tbody {
 	margin-bottom: 2em;
+}
+
+.background-gray table tbody td,
+.background-gray table tfoot th,
+.background-gray .tablepress tbody td,
+.background-gray .tablepress tfoot th {
+	border-top: 1px solid #736d6d;
+}
+
+.background-gray .tablepress thead th {
+	border-bottom: 1px solid #736d6d;
 }
 
 .gform_wrapper h3.gform_title {
@@ -396,16 +437,19 @@ input[type="submit"]:hover {
 	padding-bottom: .7em;
 }
 
-.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select,
-.gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select,
-.gform_wrapper.gf_browser_chrome .ginput_complex select {
+form select,
+.gform_wrapper ul.gform_fields li.gfield select,
+.gform_wrapper .ginput_complex .ginput_right select,
+.gform_wrapper .ginput_complex select {
 	height: 30px;
 }
 
+form label,
 .gform_wrapper .top_label .gfield_label {
 	font-size: 1.2em;
 }
 
+form ul li label,
 .gform_wrapper ul.gfield_checkbox li label,
 .gform_wrapper ul.gfield_radio li label {
 	font-weight: 400;
