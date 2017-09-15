@@ -1,0 +1,95 @@
+form {
+	margin: 0; /* Reset the spine's form */
+	padding: 0; /* Reset the spine's form */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+	background: #f2f2f2;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 2px solid #cbcbcb;
+	border-left: 0;
+	border-radius: 0;
+	padding: 1em;
+	font-size: 14px;
+	color: #262626;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+	box-shadow: none;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 2px solid #ececec;
+	border-left: 0;
+	border-radius: 0;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: #fa5735;
+	border: 0;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 0;
+	line-height: normal;
+	padding: 1em;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #ca1237;
+	color: #fff;
+}
+
+.widget form div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.widget form div input {
+	margin-top: .5em;
+}
+
+.widget input[type="text"] {
+	margin-right: .4em;
+	flex: 2;
+}
+
+.widget input[type="submit"] {
+	flex: 1;
+}
+
+.tablepress tbody td,
+.tablepress tfoot th {
+	border-top: 1px solid #f2f2f2;
+}
+
+.tablepress tfoot th,
+.tablepress thead th {
+	background: transparent;
+	text-transform: uppercase;
+}
+
+.tablepress tbody {
+	margin-bottom: 2em;
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select,
+.gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right select,
+.gform_wrapper.gf_browser_chrome .ginput_complex select {
+	height: 30px;
+}

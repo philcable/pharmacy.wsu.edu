@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+#spine #glue:before {
+	border-right: 4px solid #f2f2f2;
+}
+
+@media (min-width: 990px) {
+
+	#spine .spine-social-channels {
+		display: none;
+	}
+}

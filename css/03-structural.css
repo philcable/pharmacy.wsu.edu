@@ -1,0 +1,33 @@
+body {
+	background: #ececec;
+}
+
+main {
+	background: #fff;
+	border-right: 4px solid #f2f2f2;
+}
+
+.background-gray {
+	background-color: #f2f2f2;
+	color: #262626;
+	min-height: 250px;
+}
+
+.margin-vertical {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 990px) {
+
+	main {
+		margin-bottom: 63px;
+	}
+}
+
+@media (max-width: 990px) {
+
+	main {
+		margin-bottom: 20px;
+	}
+}

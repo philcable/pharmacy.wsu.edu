@@ -1,0 +1,27 @@
+.main-header {
+	background-color: transparent;
+	border-top: solid 5px #a31d36;
+	max-width: calc(1386px - 198px);
+}
+
+.main-header .header-group {
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+	float: right;
+}
+
+.main-header sub {
+	display: none;
+}
+
+.main-header sup a:hover,
+.main-header sup a:focus,
+.main-header sup a,
+.main-header sup {
+	font-size: 14px;
+	color: #4a4a4a;
+	letter-spacing: .5px;
+	float: right;
+	border-bottom: 0;
+}

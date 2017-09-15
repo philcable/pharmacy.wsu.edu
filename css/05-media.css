@@ -1,0 +1,35 @@
+.bleed-right {
+	max-width: none !important;
+	margin-right: 0 !important;
+	margin-left: auto;
+}
+
+.bleed-left {
+	max-width: none !important;
+	margin-right: auto;
+	margin-left: 0 !important;
+}
+
+.img-mid-feature {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 415px;
+	margin: 2rem 0 2rem 4rem;
+	position: relative;
+}
+
+.img-sm-feature {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 250px;
+}
+
+.img-attached {
+	background-attachment: fixed;
+}
+
+figure a {
+	border-bottom: none;
+}
