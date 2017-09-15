@@ -184,7 +184,7 @@ aside h4 {
 aside header {
 	font-size: 15px;
 	letter-spacing: .5px;
-	color: #c7c7c7;
+	color: #767572;
 	border-bottom: 5px solid #f2f2f2;
 	padding: 0 0 .2em .5em;
 	margin-bottom: .4em;
@@ -230,8 +230,19 @@ aside ul li {
 	background-attachment: fixed;
 }
 
+.spacing-loose .halves.gutter .column.one:not(.gutterless).has-video,
+.halves.gutter .column.one:not(.gutterless).has-video,
+.column.has-video {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 figure a {
 	border-bottom: none;
+}
+
+.single-post figure.featured-image {
+	margin-top: -50px;
 }
 
 footer.article-footer {

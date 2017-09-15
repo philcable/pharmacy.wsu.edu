@@ -30,6 +30,17 @@
 	background-attachment: fixed;
 }
 
+.spacing-loose .halves.gutter .column.one:not(.gutterless).has-video,
+.halves.gutter .column.one:not(.gutterless).has-video,
+.column.has-video {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 figure a {
 	border-bottom: none;
+}
+
+.single-post figure.featured-image {
+	margin-top: -50px;
 }
