@@ -5,8 +5,7 @@
 	<nav class="footer-nav">
 		<?php
 		$spine_site_args = array(
-			'theme_location' => 'site',
-			'menu' => 'footer',
+			'theme_location' => 'footer',
 			'container' => false,
 			'container_class' => false,
 			'container_id' => false,
