@@ -18,6 +18,11 @@ footer.article-footer {
 	padding-bottom: 2.4em;
 }
 
+article footer a,
+article header cite a {
+	border-bottom: 0;
+}
+
 aside.widget {
 	margin: 2em 0;
 }

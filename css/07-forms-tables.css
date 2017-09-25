@@ -17,6 +17,7 @@ textarea {
 	padding: 1em;
 	font-size: 14px;
 	color: #262626;
+	transition: border .7s ease;
 }
 
 input[type="email"]:focus,
@@ -33,6 +34,7 @@ textarea:focus {
 
 .button,
 button,
+button a,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -44,10 +46,12 @@ input[type="submit"] {
 	margin-bottom: 0;
 	line-height: normal;
 	padding: 1em;
+	transition: background 1s ease;
 }
 
 .button:hover,
 button:hover,
+button a:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -71,6 +75,10 @@ input[type="submit"]:hover {
 
 .widget input[type="submit"] {
 	flex: 1;
+}
+
+.widget select {
+	margin-top: 1em;
 }
 
 table tbody td,

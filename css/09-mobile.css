@@ -19,3 +19,17 @@
 		font-size: 42px;
 	}
 }
+
+@media (min-width: 990px) {
+
+	main {
+		margin-bottom: 63px;
+	}
+}
+
+@media (max-width: 990px) {
+
+	main {
+		margin-bottom: 20px;
+	}
+}

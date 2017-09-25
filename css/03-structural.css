@@ -13,21 +13,56 @@ main {
 	min-height: 250px;
 }
 
+.background-gray.no-min {
+	min-height: inherit;
+}
+
 .margin-vertical {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
-@media (min-width: 990px) {
-
-	main {
-		margin-bottom: 63px;
-	}
+footer.main-footer {
+	margin-bottom: 2em;
 }
 
-@media (max-width: 990px) {
+p.intro-text.bar:after {
+	content: " ";
+	display: block;
+	width: 150px;
+	height: 14px;
+	background: #a31d36;
+	bottom: 0;
+	position: absolute;
+	margin-bottom: 12px;
+}
 
-	main {
-		margin-bottom: 20px;
-	}
+aside + aside {
+	margin-top: 3em;
+}
+
+aside {
+	padding: 1em;
+	transition: background .7s ease;
+}
+
+aside:hover {
+	background: #f2f2f2;
+	cursor: pointer;
+	color: #736d6d;
+}
+
+aside.widget_search {
+	background: transparent;
+	cursor: none;
+	color: inherit;
+}
+
+aside:hover header {
+	border-bottom: 5px solid #c7c7c7;
+}
+
+hr {
+	border-color: transparent;
+	background-color: #cbcbcb;
 }
