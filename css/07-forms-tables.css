@@ -148,3 +148,7 @@ form ul li label,
 .gform_wrapper .percentbar_blue {
 	background-color: #a31d36;
 }
+
+.tablepress-table-description {
+	padding: .7em 0;
+}
