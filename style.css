@@ -5,7 +5,7 @@
  Author:         WSU University Communications
  Author URI:     https://web.wsu.edu
  Template:       spine
- Version:        0.0.1
+ Version:        0.0.3
 */
 
 .main-header {
@@ -162,6 +162,16 @@ main ul li:before {
 .intro-text {
 	font-size: 20px;
 	line-height: 32px;
+	width: 65%;
+}
+
+.intro-text:after {
+	content: "";
+	display: block;
+	width: 20%;
+	background: #a31d36;
+	height: 5px;
+	margin-top: 25px;
 }
 
 main a {
@@ -214,6 +224,30 @@ main a:hover:after {
 	transition: all 0s ease;
 }
 
+aside a:after,
+aside a:before,
+main a.button:after,
+main a.button:before {
+	display: none;
+}
+
+aside a:hover:after,
+aside a:hover:before,
+main a.button:hover:after,
+main a.button:hover:before {
+	background: transparent;
+}
+
+aside a {
+	border-bottom: 1px solid #fa5735;
+}
+
+aside a:hover,
+aside a:focus {
+	color: #ca1237;
+	border-bottom: 1px solid #ca1237;
+}
+
 h1 {
 	color: #a31d36;
 	font-size: 52px;
@@ -229,11 +263,11 @@ h2 {
 	line-height: 1.3;
 	font-weight: 300;
 	letter-spacing: .5px;
-	padding-top: 0;
+	padding-top: 1em;
 	padding-bottom: .7em;
 }
 
-p + h2 {
+h2 + p {
 	padding-top: .8em;
 }
 
@@ -286,7 +320,7 @@ aside ul {
 }
 
 aside ul li {
-	padding-bottom: .4em;
+	padding-bottom: .6em;
 }
 
 .background-gray aside header {
@@ -376,6 +410,10 @@ figure a {
 
 .single-post figure.featured-image {
 	margin-top: -50px;
+}
+
+.has-video p {
+	display: none;
 }
 
 footer.article-footer {
@@ -470,7 +508,7 @@ input[type="reset"],
 input[type="submit"] {
 	background: #fa5735;
 	border: 0;
-	border-radius: 10px;
+	border-radius: 6px;
 	font-size: 14px;
 	color: #fff;
 	margin-bottom: 0;
@@ -538,6 +576,10 @@ table tbody,
 	margin-bottom: 2em;
 }
 
+.tablepress-table-description {
+	padding: .7em 0;
+}
+
 .background-gray table tbody td,
 .background-gray table tfoot th,
 .background-gray .tablepress tbody td,
@@ -547,6 +589,11 @@ table tbody,
 
 .background-gray .tablepress thead th {
 	border-bottom: 1px solid #736d6d;
+}
+
+
+.gform_wrapper {
+	margin: 0;
 }
 
 .gform_wrapper h3.gform_title {
@@ -584,10 +631,6 @@ form ul li label,
 
 .gform_wrapper .percentbar_blue {
 	background-color: #a31d36;
-}
-
-.tablepress-table-description {
-	padding: .7em 0;
 }
 
 footer.site-footer {

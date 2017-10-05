@@ -44,3 +44,7 @@ figure a {
 .single-post figure.featured-image {
 	margin-top: -50px;
 }
+
+.has-video p {
+	display: none;
+}
