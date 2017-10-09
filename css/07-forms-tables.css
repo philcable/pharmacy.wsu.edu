@@ -40,7 +40,7 @@ input[type="reset"],
 input[type="submit"] {
 	background: #fa5735;
 	border: 0;
-	border-radius: 10px;
+	border-radius: 6px;
 	font-size: 14px;
 	color: #fff;
 	margin-bottom: 0;
@@ -101,6 +101,10 @@ table tbody,
 	margin-bottom: 2em;
 }
 
+.tablepress-table-description {
+	padding: .7em 0;
+}
+
 .background-gray table tbody td,
 .background-gray table tfoot th,
 .background-gray .tablepress tbody td,
@@ -110,6 +114,11 @@ table tbody,
 
 .background-gray .tablepress thead th {
 	border-bottom: 1px solid #736d6d;
+}
+
+
+.gform_wrapper {
+	margin: 0;
 }
 
 .gform_wrapper h3.gform_title {
@@ -147,8 +156,4 @@ form ul li label,
 
 .gform_wrapper .percentbar_blue {
 	background-color: #a31d36;
-}
-
-.tablepress-table-description {
-	padding: .7em 0;
 }
