@@ -22,7 +22,10 @@
 
 	<div class="social">
 
-		<a href="#">
+		<?php $social_channels = spine_social_options(); ?>
+
+		<?php if ( isset( $social_channels['facebook'] ) ) { ?>
+		<a href="<?php echo esc_url( $social_channels['facebook'] ); ?>">
 			<svg class="social-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 				<title>Facebook icon</title>
 				<g id="facebook" stroke="none" stroke-width="1">
@@ -30,8 +33,10 @@
 				</g>
 			</svg>
 		</a>
+		<?php } ?>
 
-		<a href="#">
+		<?php if ( isset( $social_channels['youtube'] ) ) { ?>
+		<a href="<?php echo esc_url( $social_channels['youtube'] ); ?>">
 			<svg class="social-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 				<title>YouTube icon</title>
 				<g id="youtube" stroke="none" stroke-width="1">
@@ -40,8 +45,10 @@
 				</g>
 			</svg>
 		</a>
+		<?php } ?>
 
-		<a href="#">
+		<?php if ( isset( $social_channels['twitter'] ) ) { ?>
+		<a href="<?php echo esc_url( $social_channels['twitter'] ); ?>">
 			<svg class="social-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 				<g id="twitter" stroke="none" stroke-width="1">
 					<title>Twitter icon</title>
@@ -49,6 +56,7 @@
 				</g>
 			</svg>
 		</a>
+		<?php } ?>
 
 	</div>
 
