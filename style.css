@@ -36,6 +36,10 @@
 	border-bottom: 0;
 }
 
+.home .main-header {
+	display: none;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -120,6 +124,14 @@ hr {
 	background-color: #cbcbcb;
 }
 
+section.pad-bottom > header {
+	padding-bottom: 0;
+}
+
+ul.wsuwp-content-syndicate-list li:before {
+	display: none;
+}
+
 body,
 main {
 	color: #4a4a4a;
@@ -180,7 +192,6 @@ main a {
 	color: #4a4a4a;
 	position: relative;
 	border-bottom: 1px solid rgba(250, 87, 53, .5);
-	padding-bottom: 1px;
 	transition: color 1s ease;
 }
 
@@ -275,8 +286,12 @@ h2 + p {
 	color: #262626;
 }
 
+section.pad-bottom > header h2 {
+	padding-bottom: 0;
+}
+
 h3 {
-	color: #262626;
+	color: #3e3e3e;
 	font-size: 26px;
 	font-weight: 600;
 	padding-top: 1em;
@@ -284,7 +299,7 @@ h3 {
 }
 
 h4 {
-	color: #262626;
+	color: #3e3e3e;
 	font-size: 15px;
 	font-weight: 600;
 	letter-spacing: .4px;
@@ -408,11 +423,68 @@ figure a {
 	border-bottom: none;
 }
 
-.single-post figure.featured-image {
-	margin-top: -50px;
+.content-item-excerpt img {
+	display: none;
 }
 
 .has-video p {
+	display: none;
+}
+
+.hero-video-wrapper {
+	height: 0;
+	width: 100%;
+	padding-bottom: 56.25%;
+	z-index: 1;
+}
+
+.hero-video-wrapper .hero-video {
+	position: absolute;
+	padding: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 2.2em;
+	width: 100%;
+	height: 100%;
+}
+
+.video-wrap {
+	margin-top: 3em;
+}
+
+.spacing-loose .single.gutter.video-wrap  .column:not(.gutterless) {
+	padding-left: 0;
+}
+
+.video-wrap.img-mid-feature {
+	margin-left: 0;
+}
+
+.video-wrap header {
+	position: absolute;
+	margin: 0 0 0 8em;
+	padding: 0;
+	z-index: 3;
+	top: 40%;
+}
+
+.video-wrap header sup,
+.video-wrap header h1 {
+	color: #fff;
+}
+
+.video-wrap header sup {
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+
+.video-wrap header h1 {
+	font-size: 5rem;
+	letter-spacing: 1px;
+}
+
+.video-wrap p {
 	display: none;
 }
 
@@ -464,6 +536,10 @@ figure.featured-image {
 
 .single-post header.article-header hgroup h1.article-title {
 	margin-bottom: 0;
+}
+
+.single-post figure.featured-image {
+	display: none;
 }
 
 form {

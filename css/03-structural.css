@@ -66,3 +66,15 @@ hr {
 	border-color: transparent;
 	background-color: #cbcbcb;
 }
+
+section.pad-bottom > header {
+	padding-bottom: 0;
+}
+
+ul.wsuwp-content-syndicate-list li:before {
+	display: none;
+}
+
+.featured ul.wsuwp-content-syndicate-list .wsuwp-content-syndicate-item {
+	display: flex;
+}

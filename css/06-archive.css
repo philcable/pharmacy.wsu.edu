@@ -47,3 +47,7 @@ figure.featured-image {
 .single-post header.article-header hgroup h1.article-title {
 	margin-bottom: 0;
 }
+
+.single-post figure.featured-image {
+	display: none;
+}
