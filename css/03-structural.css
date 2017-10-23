@@ -74,7 +74,3 @@ section.pad-bottom > header {
 ul.wsuwp-content-syndicate-list li:before {
 	display: none;
 }
-
-.featured ul.wsuwp-content-syndicate-list .wsuwp-content-syndicate-item {
-	display: flex;
-}

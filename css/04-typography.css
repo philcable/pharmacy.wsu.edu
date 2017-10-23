@@ -105,14 +105,18 @@ main a:hover:after {
 aside a:after,
 aside a:before,
 main a.button:after,
-main a.button:before {
+main a.button:before,
+ul.wsuwp-content-syndicate-list .content-item-read-story:after,
+ul.wsuwp-content-syndicate-list .content-item-read-story:before {
 	display: none;
 }
 
 aside a:hover:after,
 aside a:hover:before,
 main a.button:hover:after,
-main a.button:hover:before {
+main a.button:hover:before,
+ul.wsuwp-content-syndicate-list .content-item-read-story:hover:after,
+ul.wsuwp-content-syndicate-list .content-item-read-story:hover:before {
 	background: transparent;
 }
 
@@ -159,10 +163,11 @@ section.pad-bottom > header h2 {
 
 h3 {
 	color: #3e3e3e;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 600;
 	padding-top: 1em;
-	padding-bottom: .6em;
+	padding-bottom: 1em;
+	line-height: 1.4;
 }
 
 h4 {
