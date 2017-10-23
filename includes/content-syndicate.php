@@ -77,7 +77,9 @@ function wsuwp_json_output( $content, $data, $atts ) {
 
 				<div class="card-content">
 
-					<header class="card-title"><?php echo esc_html( $content->title ); ?></header>
+					<header class="card-title">
+						<a href="<?php echo esc_url( $content->link ); ?>"><?php echo esc_html( $content->title ); ?></a>
+					</header>
 
 					<div class="card-excerpt">
 						<?php echo wp_kses_post( $content->excerpt ); ?>
