@@ -13,7 +13,7 @@ add_action( 'init', 'pharmacy_register_footer_menu' );
  * @return string
  */
 function pharmacy_theme_version() {
-	return '0.1.0';
+	return '0.1.1';
 }
 
 /**
