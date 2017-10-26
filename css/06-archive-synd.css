@@ -192,3 +192,13 @@ figure.featured-image {
 .wsuwp-content-syndicate-event .content-item-event-excerpt {
 	order: 4;
 }
+
+.grid .wsu-person {
+	background: transparent;
+}
+
+.grid .name {
+	font-size: 1.3rem;
+	padding-bottom: .4em;
+	font-weight: 600;
+}
