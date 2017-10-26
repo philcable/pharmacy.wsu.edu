@@ -70,7 +70,3 @@ hr {
 section.pad-bottom > header {
 	padding-bottom: 0;
 }
-
-ul.wsuwp-content-syndicate-list li:before {
-	display: none;
-}
