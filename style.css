@@ -233,6 +233,8 @@ main a:hover:after {
 
 aside a:after,
 aside a:before,
+aside ul li a:after,
+aside ul li a:before,
 main a.button:after,
 main a.button:before,
 ul.wsuwp-content-syndicate-list .content-item-read-story:after,
@@ -242,6 +244,8 @@ ul.wsuwp-content-syndicate-list .content-item-read-story:before {
 
 aside a:hover:after,
 aside a:hover:before,
+aside ul li a:hover:after,
+aside ul li a:hover:before,
 main a.button:hover:after,
 main a.button:hover:before,
 ul.wsuwp-content-syndicate-list .content-item-read-story:hover:after,
@@ -250,13 +254,14 @@ ul.wsuwp-content-syndicate-list .content-item-read-story:hover:before {
 }
 
 aside a {
+	border-bottom: 0;
 	border-bottom: 1px solid #fa5735;
+	display: inline;
 }
 
 aside a:hover,
 aside a:focus {
 	color: #ca1237;
-	border-bottom: 1px solid #ca1237;
 }
 
 h1 {
@@ -290,12 +295,16 @@ section.pad-bottom > header h2 {
 	padding-bottom: 0;
 }
 
+.no-h2-pad h2:first-of-type {
+	padding-top: 0;
+}
+
 h3 {
 	color: #3e3e3e;
 	font-size: 24px;
 	font-weight: 600;
 	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-bottom: .7em;
 	line-height: 1.4;
 }
 
@@ -329,6 +338,10 @@ aside header {
 aside address,
 aside p {
 	padding-left: .5em;
+}
+
+aside h4 + p {
+	padding-top: 1em;
 }
 
 aside ul {
@@ -377,7 +390,7 @@ sup b {
 h3 + sup,
 h3 + p sup {
 	display: block;
-	margin-top: .3em;
+	margin-top: -.4em;
 	margin-bottom: .6em;
 }
 
@@ -539,6 +552,8 @@ figure.featured-image {
 	margin-bottom: 0;
 }
 
+.blog .article-thumbnail,
+.archive .article-thumbnail,
 .single-post figure.featured-image {
 	display: none;
 }
