@@ -48,6 +48,8 @@ figure.featured-image {
 	margin-bottom: 0;
 }
 
+.blog .article-thumbnail,
+.archive .article-thumbnail,
 .single-post figure.featured-image {
 	display: none;
 }
