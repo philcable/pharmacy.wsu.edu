@@ -70,3 +70,19 @@ hr {
 section.pad-bottom > header {
 	padding-bottom: 0;
 }
+
+.flex {
+	display: flex;
+}
+
+@media screen and (max-width: 790px) {
+
+	.flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fluid .row.halves.flex .column {
+		width: 100%;
+	}
+}
