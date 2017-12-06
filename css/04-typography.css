@@ -57,8 +57,8 @@ main a {
 	text-decoration: none;
 	color: #4a4a4a;
 	position: relative;
-	border-bottom: 1px solid rgba(250, 87, 53, .5);
-	transition: color 1s ease;
+	border-bottom: 1px solid rgba(215, 34, 22, .5);
+	transition: color 1.3s ease;
 }
 
 main a:before {
@@ -69,8 +69,8 @@ main a:before {
 	bottom: -1px;
 	height: 1px;
 	width: 0;
-	-webkit-transition: width 0s ease, background .3s ease;
-	transition: width 0s ease, background .3s ease;
+	-webkit-transition: width 0s ease, background 1.3s ease;
+	transition: width 0s ease, background 1.3s ease;
 }
 
 main a:after {
@@ -81,8 +81,8 @@ main a:after {
 	bottom: -1px;
 	height: 1px;
 	width: 0;
-	background: #fa5735;
-	transition: width .3s ease;
+	background: #d72216;
+	transition: width 1.3s ease;
 }
 
 main a:hover,
@@ -108,8 +108,12 @@ aside ul li a:after,
 aside ul li a:before,
 main a.button:after,
 main a.button:before,
+main a.sub-button:after,
+main a.sub-button:before,
 ul.wsuwp-content-syndicate-list .content-item-read-story:after,
-ul.wsuwp-content-syndicate-list .content-item-read-story:before {
+ul.wsuwp-content-syndicate-list .content-item-read-story:before,
+.featured .deck article.card .card-content .card-cta a:before,
+.featured .deck article.card .card-content .card-cta a:after {
 	display: none;
 }
 
@@ -119,14 +123,18 @@ aside ul li a:hover:after,
 aside ul li a:hover:before,
 main a.button:hover:after,
 main a.button:hover:before,
+main a.sub-button:hover:after,
+main a.sub-button:hover:before,
 ul.wsuwp-content-syndicate-list .content-item-read-story:hover:after,
-ul.wsuwp-content-syndicate-list .content-item-read-story:hover:before {
+ul.wsuwp-content-syndicate-list .content-item-read-story:hover:before,
+.featured .deck article.card .card-content .card-cta a:hover:after,
+.featured .deck article.card .card-content .card-cta a:hover:before {
 	background: transparent;
 }
 
 aside a {
 	border-bottom: 0;
-	border-bottom: 1px solid #fa5735;
+	border-bottom: 1px solid #d72216;
 	display: inline;
 }
 

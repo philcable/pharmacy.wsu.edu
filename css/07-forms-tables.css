@@ -44,15 +44,16 @@ button a,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background: #fa5735;
-	border: 0;
+	background: #d72216;
+	border: 1px solid #d72216;
 	border-radius: 6px;
 	font-size: 14px;
 	color: #fff;
 	margin-bottom: 0;
 	line-height: normal;
 	padding: 1em;
-	transition: background 1s ease;
+	transition: background 1.3s ease;
+	transition: color .3s ease;
 }
 
 .button:hover,
@@ -61,7 +62,31 @@ button a:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
+	background: transparent;
+	color: #ca1237;
+	border: 1px solid #ca1237;
+}
+
+.sub-button,
+button.sub-button,
+button.sub-button {
+	background: transparent;
+	border: 1px solid #d72216;
+	border-radius: 6px;
+	font-size: 14px;
+	color: #d72216;
+	margin-bottom: 0;
+	line-height: normal;
+	padding: 1em;
+	transition: background 1.3s ease;
+	transition: color .5s ease;
+}
+
+.sub-button:hover,
+button.sub-button:hover,
+button.sub-button a:hover {
 	background: #ca1237;
+	border: 1px solid #ca1237;
 	color: #fff;
 }
 
