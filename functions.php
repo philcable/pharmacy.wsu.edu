@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . '/includes/content-syndicate.php';
+require_once __DIR__ . '/includes/content-syndicate.php';
 
 add_filter( 'spine_child_theme_version', 'pharmacy_theme_version' );
 add_action( 'init', 'pharmacy_register_footer_menu' );
@@ -13,7 +13,7 @@ add_action( 'init', 'pharmacy_register_footer_menu' );
  * @return string
  */
 function pharmacy_theme_version() {
-	return '0.1.2';
+	return '0.1.3';
 }
 
 /**
