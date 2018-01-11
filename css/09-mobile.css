@@ -1,22 +1,24 @@
 @media (max-width: 790px) {
 
 	main h1 {
-		font-size: 48px;
+		font-size: 8vw;
 	}
 
 	main h2 {
-		word-break: break-all;
+		font-size: 6vw;
+	}
+
+	.intro-text {
+		width: 100%;
 	}
 
 	.img-mid-feature {
 		margin-left: 0;
 	}
-}
 
-@media (max-width: 440px) {
-
-	main h1 {
-		font-size: 42px;
+	.video-wrap header {
+		margin-left: 13%;
+		top: 33%;
 	}
 }
 
@@ -27,9 +29,33 @@
 	}
 }
 
-@media (max-width: 990px) {
+@media (max-width: 989px) {
 
 	main {
 		margin-bottom: 20px;
+	}
+
+	.hero-video-wrapper .hero-video {
+		left: 0;
+	}
+
+	.video-wrap header {
+		margin-left: 13%;
+	}
+
+	.video-wrap header h1 {
+		font-size: 8vw;
+	}
+
+	.spacing-loose .single.gutter.video-wrap .column:not(.gutterless) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 490px) {
+
+	.video-wrap header {
+		top: 13%;
 	}
 }

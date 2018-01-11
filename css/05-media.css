@@ -46,6 +46,11 @@ figure a {
 }
 
 .has-video p {
+	padding-bottom: 0;
+	line-height: 0;
+}
+
+.has-video p:empty {
 	display: none;
 }
 
