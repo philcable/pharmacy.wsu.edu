@@ -633,7 +633,7 @@ figure.featured-image {
 	padding-bottom: 1em;
 }
 
-.deck article.card .card-content .more-default {
+.deck article.card .card-content .more-link {
 	display: none;
 }
 
