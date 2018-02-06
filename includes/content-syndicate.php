@@ -3,6 +3,7 @@
 namespace WSU\Pharmacy\Content_Syndicate;
 
 add_filter( 'wsuwp_content_syndicate_json_output', 'WSU\Pharmacy\Content_Syndicate\wsuwp_json_output', 10, 3 );
+add_filter( 'wsuwp_people_item_html', 'WSU\Pharmacy\Content_Syndicate\people_html', 10, 2 );
 
 /**
  * Provide fallback URLs if thumbnail sizes have not been generated
@@ -101,4 +102,111 @@ function wsuwp_json_output( $content, $data, $atts ) {
 	}
 
 	return $content;
+}
+
+/**
+ * Provide a custom HTML template for use with syndicated people.
+ *
+ * @param string   $html   The HTML to output for an individual person.
+ * @param stdClass $person Object representing a person received from people.wsu.edu.
+ *
+ * @return string The HTML to output for a person.
+ */
+function people_html( $html, $person ) {
+	// Cast the photo collection as an array to account for cases
+	// where it can sometimes come through as an object.
+	$photo_collection = (array) $person->photos;
+	$photo = false;
+
+	// Get the URL of the display photo.
+	if ( ! empty( $photo_collection ) ) {
+		if ( ! empty( $person->display_photo ) && isset( $photo_collection[ $person->display_photo ] ) ) {
+			$photo = $photo_collection[ $person->display_photo ]->thumbnail;
+		} elseif ( isset( $photo_collection[0] ) ) {
+			$photo = $photo_collection[0]->thumbnail;
+		}
+	}
+
+	// Get the display title(s).
+	if ( ! empty( $person->working_titles ) ) {
+		if ( ! empty( $person->display_title ) ) {
+			$display_titles = explode( ',', $person->display_title );
+			foreach ( $display_titles as $display_title ) {
+				if ( isset( $person->working_titles[ $display_title ] ) ) {
+					$titles[] = $person->working_titles[ $display_title ];
+				}
+			}
+		} else {
+			$titles = $person->working_titles;
+		}
+	} else {
+		$titles = array( $person->position_title );
+	}
+
+	$office = ( ! empty( $person->office_alt ) ) ? $person->office_alt : $person->office;
+	$address = ( ! empty( $person->address_alt ) ) ? $person->address_alt : $person->address;
+	$email = ( ! empty( $person->email_alt ) ) ? $person->email_alt : $person->email;
+	$phone = ( ! empty( $person->phone_alt ) ) ? $person->phone_alt : $person->phone;
+
+	$link = ( '' !== $person->content->rendered ) ? $person->link : false;
+
+	ob_start();
+	?>
+	<article class="person-card">
+
+		<header class="person-card-name">
+			<?php if ( $link ) { ?>
+			<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $person->title->rendered ); ?></a>
+			<?php } else { ?>
+				<?php echo esc_html( $person->title->rendered ); ?>
+			<?php } ?>
+		</header>
+
+		<?php if ( $photo ) { ?>
+		<figure class="person-card-photo">
+			<?php if ( $link ) { ?>
+			<a href="<?php echo esc_url( $link ); ?>"><img src="<?php echo esc_url( $photo ); ?>" alt="" /></a>
+			<?php } else { ?>
+				<img src="<?php echo esc_url( $photo ); ?>" alt="" />
+			<?php } ?>
+		</figure>
+		<?php } ?>
+
+		<div class="person-card-contact">
+
+			<?php foreach ( $titles as $title ) { ?>
+			<div class="person-card-title"><?php echo esc_html( $title ); ?></div>
+			<?php } ?>
+
+			<?php if ( $email ) { ?>
+			<div class="person-card-email">
+				<a href="mailto:<?php echo esc_attr( $email ); ?>"><?php echo esc_html( $email ); ?></a>
+			</div>
+			<?php } ?>
+
+			<?php if ( $phone ) { ?>
+			<div class="person-card-phone"><?php echo esc_html( $phone ); ?></div>
+			<?php } ?>
+
+			<?php if ( $office ) { ?>
+			<div class="person-card-office"><?php echo esc_html( $office ); ?></div>
+			<?php } ?>
+
+			<?php if ( $address ) { ?>
+			<div class="person-card-address"><?php echo esc_html( $address ); ?></div>
+			<?php } ?>
+
+			<?php if ( $person->website ) { ?>
+			<div class="person-card-website">
+				<a href="<?php echo esc_url( $person->website ); ?>"><?php echo esc_url( $person->website ); ?></a>
+			</div>
+			<?php } ?>
+
+		</div>
+
+	</article>
+	<?php
+	$html = ob_get_clean();
+
+	return $html;
 }
