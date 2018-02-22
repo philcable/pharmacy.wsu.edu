@@ -150,9 +150,21 @@ function people_html( $html, $person ) {
 
 	$link = ( '' !== $person->content->rendered ) ? $person->link : false;
 
+	$classes = 'person-card wsuwp-person-container';
+
+	// Add classes based on taxonomy terms.
+	if ( ! empty( $person->taxonomy_terms ) ) {
+		foreach ( $person->taxonomy_terms as $taxonomy => $terms ) {
+			$prefix = array_pop( explode( '_', $taxonomy ) );
+			foreach ( $terms as $term ) {
+				$classes .= ' ' . $prefix . '-' . $term->slug;
+			}
+		}
+	}
+
 	ob_start();
 	?>
-	<article class="person-card">
+	<article class="<?php echo esc_attr( $classes ); ?>">
 
 		<header class="person-card-name">
 			<?php if ( $link ) { ?>
