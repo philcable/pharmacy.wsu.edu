@@ -163,11 +163,11 @@ function people_html( $html, $person ) {
 		</header>
 
 		<?php if ( $photo ) { ?>
-		<figure class="person-card-photo">
+		<figure class="person-card-photo" aria-hidden="true">
 			<?php if ( $link ) { ?>
 			<a href="<?php echo esc_url( $link ); ?>"><img src="<?php echo esc_url( $photo ); ?>" alt="" /></a>
 			<?php } else { ?>
-				<img src="<?php echo esc_url( $photo ); ?>" alt="" />
+				<img src="<?php echo esc_url( $photo ); ?>" alt="<?php echo esc_html( $person->title->rendered ); ?>" />
 			<?php } ?>
 		</figure>
 		<?php } ?>
