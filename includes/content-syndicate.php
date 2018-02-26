@@ -150,9 +150,21 @@ function people_html( $html, $person ) {
 
 	$link = ( '' !== $person->content->rendered ) ? $person->link : false;
 
+	$classes = 'person-card wsuwp-person-container';
+
+	// Add classes based on taxonomy terms.
+	if ( ! empty( $person->taxonomy_terms ) ) {
+		foreach ( $person->taxonomy_terms as $taxonomy => $terms ) {
+			$prefix = array_pop( explode( '_', $taxonomy ) );
+			foreach ( $terms as $term ) {
+				$classes .= ' ' . $prefix . '-' . $term->slug;
+			}
+		}
+	}
+
 	ob_start();
 	?>
-	<article class="person-card">
+	<article class="<?php echo esc_attr( $classes ); ?>">
 
 		<header class="person-card-name">
 			<?php if ( $link ) { ?>
@@ -163,11 +175,11 @@ function people_html( $html, $person ) {
 		</header>
 
 		<?php if ( $photo ) { ?>
-		<figure class="person-card-photo">
+		<figure class="person-card-photo" aria-hidden="true">
 			<?php if ( $link ) { ?>
 			<a href="<?php echo esc_url( $link ); ?>"><img src="<?php echo esc_url( $photo ); ?>" alt="" /></a>
 			<?php } else { ?>
-				<img src="<?php echo esc_url( $photo ); ?>" alt="" />
+				<img src="<?php echo esc_url( $photo ); ?>" alt="<?php echo esc_html( $person->title->rendered ); ?>" />
 			<?php } ?>
 		</figure>
 		<?php } ?>
