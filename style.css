@@ -5,7 +5,7 @@
  Author:         WSU University Communications
  Author URI:     https://web.wsu.edu
  Template:       spine
- Version:        0.2.3
+ Version:        0.2.4
 */
 
 .main-header {
@@ -1044,6 +1044,85 @@ form ul li label,
 
 .gform_wrapper .percentbar_blue {
 	background-color: #a31d36;
+}
+
+.tribe_community_edit .single .one {
+	max-width: 605px;
+}
+
+.tribe_community_edit.logged-in .single .one {
+	max-width: none;
+}
+
+.tribe_community_edit label {
+	display: block;
+}
+
+.tribe_community_edit input[type="checkbox"] + label {
+	display: inline;
+}
+
+.tribe_community_edit input[type="text"],
+.tribe_community_edit input[type="password"] {
+	margin-top: 8px;
+	width: 100%;
+}
+
+.tribe_community_edit #tribe-events .tribe-button-primary,
+.tribe_community_list #tribe-events .tribe-button-primary,
+.tribe_community_edit .tribe-button.submit,
+.tribe_community_edit .button-primary {
+	background: #d72216;
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding: 1em;
+	text-transform: unset;
+}
+
+.tribe_community_edit #tribe-events .tribe-button-primary:hover,
+.tribe_community_edit #tribe-events .tribe-button-primary:focus,
+.tribe_community_list #tribe-events .tribe-button-primary:hover,
+.tribe_community_list #tribe-events .tribe-button-primary:focus,
+.tribe_community_edit .tribe-button.submit:hover,
+.tribe_community_edit .tribe-button.submit:focus,
+.tribe_community_list .tribe-button.submit:hover,
+.tribe_community_list .tribe-button.submit:focus,
+.tribe_community_edit .button-primary:hover,
+.tribe_community_edit .button-primary:focus {
+	background: none;
+	border: 1px solid #ca1237;
+	color: #ca1237;
+}
+
+.tribe_community_edit main a {
+	border-bottom: none;
+}
+
+#tribe-events .tribe-button:before,
+#tribe-events .tribe-button:after,
+.tribe-change-timezone:before,
+.tribe-change-timezone:hover:before,
+.tribe-delete-this:after,
+.tribe-delete-this:hover:after {
+	content: none;
+}
+
+.tribe-change-timezone:after,
+.tribe-change-timezone:hover:after,
+.tribe-delete-this:before,
+.tribe-delete-this:hover:before {
+	background: none;
+	bottom: auto;
+	height: auto;
+	position: relative;
+	right: auto;
+	transition: unset;
+	width: auto;
+}
+
+.tribe-change-timezone:hover {
+	border-bottom: 1px solid #ca1237;
 }
 
 footer.site-footer {
