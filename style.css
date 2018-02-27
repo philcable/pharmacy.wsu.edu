@@ -1070,8 +1070,8 @@ form ul li label,
 
 .tribe_community_edit #tribe-events .tribe-button-primary,
 .tribe_community_list #tribe-events .tribe-button-primary,
-.tribe_community_edit .tribe-button.submit,
-.tribe_community_edit .button-primary {
+.tribe_community_edit main .tribe-button.submit,
+.tribe_community_edit main .button-primary {
 	background: #d72216;
 	border-radius: 6px;
 	box-sizing: border-box;
@@ -1084,12 +1084,12 @@ form ul li label,
 .tribe_community_edit #tribe-events .tribe-button-primary:focus,
 .tribe_community_list #tribe-events .tribe-button-primary:hover,
 .tribe_community_list #tribe-events .tribe-button-primary:focus,
-.tribe_community_edit .tribe-button.submit:hover,
-.tribe_community_edit .tribe-button.submit:focus,
-.tribe_community_list .tribe-button.submit:hover,
-.tribe_community_list .tribe-button.submit:focus,
-.tribe_community_edit .button-primary:hover,
-.tribe_community_edit .button-primary:focus {
+.tribe_community_edit main .tribe-button.submit:hover,
+.tribe_community_edit main .tribe-button.submit:focus,
+.tribe_community_list main .tribe-button.submit:hover,
+.tribe_community_list main .tribe-button.submit:focus,
+.tribe_community_edit main .button-primary:hover,
+.tribe_community_edit main .button-primary:focus {
 	background: none;
 	border: 1px solid #ca1237;
 	color: #ca1237;
