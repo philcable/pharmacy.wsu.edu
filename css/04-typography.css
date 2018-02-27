@@ -69,7 +69,6 @@ main a:before {
 	bottom: -1px;
 	height: 1px;
 	width: 0;
-	-webkit-transition: width 0s ease, background 1.3s ease;
 	transition: width 0s ease, background 1.3s ease;
 }
 

@@ -166,52 +166,6 @@ section.pad-bottom > header {
 	margin-right: 4rem;
 }
 
-@media screen and (max-width: 790px) {
-
-	.flex {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	}
-
-	.fluid .row.halves.flex .column {
-		width: 100%;
-	}
-
-	.img-mid-feature {
-		min-height: 215px;
-	}
-
-	.collapsible-section-header {
-		padding-left: 2rem;
-	}
-
-	.collapsible-section-header h2 {
-		margin-right: 2rem;
-	}
-}
-
-@media screen and (max-width: 420px) {
-
-	.featured-image {
-		background-size: contain;
-	}
-
-	figure.featured-image {
-		height: 300px;
-	}
-
-	.main-header {
-		height: 70px;
-	}
-}
-
-
-
 body,
 main {
 	color: #4a4a4a;
@@ -1051,7 +1005,6 @@ table tbody,
 	border-bottom: 1px solid #736d6d;
 }
 
-
 .gform_wrapper {
 	margin: 0;
 }
@@ -1245,30 +1198,6 @@ footer.site-footer .social a svg:hover #twitter {
 	}
 }
 
-@media (max-width: 790px) {
-
-	main h1 {
-		font-size: 8vw;
-	}
-
-	main h2 {
-		font-size: 6vw;
-	}
-
-	.intro-text {
-		width: 100%;
-	}
-
-	.img-mid-feature {
-		margin-left: 0;
-	}
-
-	.video-wrap header {
-		margin-left: 13%;
-		top: 33%;
-	}
-}
-
 @media (min-width: 990px) {
 
 	main {
@@ -1305,10 +1234,75 @@ footer.site-footer .social a svg:hover #twitter {
 	}
 }
 
+@media (max-width: 790px) {
+
+	main h1 {
+		font-size: 8vw;
+	}
+
+	main h2 {
+		font-size: 6vw;
+	}
+
+	.intro-text {
+		width: 100%;
+	}
+
+	.img-mid-feature {
+		margin-left: 0;
+	}
+
+	.video-wrap header {
+		margin-left: 13%;
+		top: 33%;
+	}
+
+	.flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.fluid .row.halves.flex .column {
+		width: 100%;
+	}
+
+	.img-mid-feature {
+		min-height: 215px;
+	}
+
+	.collapsible-section-header {
+		padding-left: 2rem;
+	}
+
+	.collapsible-section-header h2 {
+		margin-right: 2rem;
+	}
+}
+
 @media (max-width: 490px) {
 
 	.video-wrap header {
 		top: 13%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	.featured-image {
+		background-size: contain;
+	}
+
+	figure.featured-image {
+		height: 300px;
+	}
+
+	.main-header {
+		height: 70px;
 	}
 }
 
@@ -1420,7 +1414,7 @@ footer.site-footer .social a svg:hover #twitter {
 
 .wsuwp-people-filters {
 	box-sizing: border-box;
-	padding: 0 1rem;
+	padding: 0 .5rem;
 }
 
 @media only screen and (max-width: 693px) {
