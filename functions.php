@@ -14,7 +14,7 @@ add_filter( 'wsuwp_people_default_rewrite_slug', 'pharmacy_people_rewrite_argume
  * @return string
  */
 function pharmacy_theme_version() {
-	return '0.2.4';
+	return '0.2.5';
 }
 
 /**
