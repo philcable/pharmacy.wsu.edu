@@ -51,6 +51,11 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	.spacing-loose .side-right.gutter.show-hide .column.one:not(.gutterless) {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
 }
 
 @media (max-width: 490px) {

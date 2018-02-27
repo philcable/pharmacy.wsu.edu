@@ -130,6 +130,10 @@ figure.featured-image {
 	padding: 2em;
 }
 
+.newsletter h2 {
+	padding-bottom: .2em;
+}
+
 .newsletter .deck article.card header.card-title,
 .sub-feature .deck article.card header.card-title,
 .newsletter .gform_wrapper h3.gform_title {
@@ -138,7 +142,7 @@ figure.featured-image {
 	font-weight: 600;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	line-height: 1.2;
+	line-height: 1.4;
 }
 
 .newsletter .gform_wrapper h3.gform_title {
@@ -225,4 +229,28 @@ figure.featured-image {
 	font-size: 1.3rem;
 	padding-bottom: .4em;
 	font-weight: 600;
+}
+
+ul.wsuwp-content-syndicate-list {
+	padding-left: 0;
+}
+
+ul.wsuwp-content-syndicate-list li.wsuwp-content-syndicate-event:before {
+	display: none;
+}
+
+.wsuwp-content-syndicate-event .content-item-event-title {
+	font-size: 20px;
+	line-height: 1.3;
+	padding-top: .5em;
+}
+
+li.wsuwp-content-syndicate-event {
+	padding-bottom: 1.5em;
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+.content-item-event-meta {
+	display: none;
 }

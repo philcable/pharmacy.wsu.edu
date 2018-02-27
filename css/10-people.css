@@ -60,3 +60,59 @@
 	font-weight: 400;
 	padding: 0 1rem 1rem;
 }
+
+.wsu-people-filter.search {
+	margin-bottom: 2em;
+}
+
+.grid .wsu-people .wsu-person .photo {
+	width: calc(100% + 2rem);
+	max-width: none;
+	padding: 0;
+}
+
+.wsu-person .photo a {
+	position: static;
+	display: block;
+}
+
+.wsu-person .photo a:before,
+.wsu-person .photo a:after {
+	content: none;
+}
+
+.grid .photo img {
+	position: relative;
+}
+
+.person-card-contact {
+	font-size: 100%;
+}
+
+.wsu-people-filters .search input,
+.wsuwp-people-wrapper .wsuwp-people-filters .search input {
+	height: 54px;
+}
+
+.wsuwp-people-filters {
+	box-sizing: border-box;
+	padding: 0 1rem;
+}
+
+@media only screen and (max-width: 693px) {
+
+	.person-card {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.wsuwp-people-wrapper {
+		display: block;
+	}
+
+	.person-card {
+		width: 100%;
+	}
+}

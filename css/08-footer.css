@@ -37,8 +37,8 @@ footer.site-footer nav {
 
 footer.site-footer nav ul {
 	display: flex;
-	justify-content: space-evenly;
-	padding-left: 0;
+	justify-content: space-around;
+	padding-left: 1em;
 	padding-top: .5em;
 }
 
