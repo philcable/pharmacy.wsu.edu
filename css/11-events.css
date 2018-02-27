@@ -1,0 +1,28 @@
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
+	border-bottom: none;
+}
+
+.post-type-archive-tribe_events .article-header,
+.single-tribe_events .article-header,
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:before,
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:after,
+#tribe-events .tribe-events-button:before,
+.tribe-events-button:before,
+#tribe-events .tribe-events-button:after,
+.tribe-events-button:after {
+	display: none;
+}
+
+.tribe-bar-views-list li:before {
+	display: none;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type="submit"] {
+	background: #d72216;
+	transition: all .3s ease;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type="submit"]:hover {
+	background: transparent;
+	color: #ca1237;
+}

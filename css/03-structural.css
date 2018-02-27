@@ -75,6 +75,38 @@ section.pad-bottom > header {
 	display: flex;
 }
 
+.collapsible-section-header button {
+	background-color: transparent;
+	font-size: 1.1rem;
+	color: #d72216;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	outline: 0;
+}
+
+.collapsible-section-header button:hover {
+	color: #ca1237;
+}
+
+.collapsible-section-header {
+	padding-left: 4rem;
+}
+
+.collapsible-section-header {
+	padding: 0;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.spacing-loose .side-right.gutter.show-hide .column.one:not(.gutterless) {
+	padding-left: 0;
+	padding-top: 1em;
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
 @media screen and (max-width: 790px) {
 
 	.flex {
@@ -85,4 +117,33 @@ section.pad-bottom > header {
 	.fluid .row.halves.flex .column {
 		width: 100%;
 	}
+
+	.img-mid-feature {
+		min-height: 215px;
+	}
+
+	.collapsible-section-header {
+		padding-left: 2rem;
+	}
+
+	.collapsible-section-header h2 {
+		margin-right: 2rem;
+	}
 }
+
+@media screen and (max-width: 420px) {
+
+	.featured-image {
+		background-size: contain;
+	}
+
+	figure.featured-image {
+		height: 300px;
+	}
+
+	.main-header {
+		height: 70px;
+	}
+}
+
+

@@ -134,6 +134,38 @@ section.pad-bottom > header {
 	display: flex;
 }
 
+.collapsible-section-header button {
+	background-color: transparent;
+	font-size: 1.1rem;
+	color: #d72216;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	outline: 0;
+}
+
+.collapsible-section-header button:hover {
+	color: #ca1237;
+}
+
+.collapsible-section-header {
+	padding-left: 4rem;
+}
+
+.collapsible-section-header {
+	padding: 0;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.spacing-loose .side-right.gutter.show-hide .column.one:not(.gutterless) {
+	padding-left: 0;
+	padding-top: 1em;
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
 @media screen and (max-width: 790px) {
 
 	.flex {
@@ -149,7 +181,36 @@ section.pad-bottom > header {
 	.fluid .row.halves.flex .column {
 		width: 100%;
 	}
+
+	.img-mid-feature {
+		min-height: 215px;
+	}
+
+	.collapsible-section-header {
+		padding-left: 2rem;
+	}
+
+	.collapsible-section-header h2 {
+		margin-right: 2rem;
+	}
 }
+
+@media screen and (max-width: 420px) {
+
+	.featured-image {
+		background-size: contain;
+	}
+
+	figure.featured-image {
+		height: 300px;
+	}
+
+	.main-header {
+		height: 70px;
+	}
+}
+
+
 
 body,
 main {
@@ -679,6 +740,10 @@ figure.featured-image {
 	padding: 2em;
 }
 
+.newsletter h2 {
+	padding-bottom: .2em;
+}
+
 .newsletter .deck article.card header.card-title,
 .sub-feature .deck article.card header.card-title,
 .newsletter .gform_wrapper h3.gform_title {
@@ -687,7 +752,7 @@ figure.featured-image {
 	font-weight: 600;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	line-height: 1.2;
+	line-height: 1.4;
 }
 
 .newsletter .gform_wrapper h3.gform_title {
@@ -787,6 +852,30 @@ figure.featured-image {
 	font-size: 1.3rem;
 	padding-bottom: .4em;
 	font-weight: 600;
+}
+
+ul.wsuwp-content-syndicate-list {
+	padding-left: 0;
+}
+
+ul.wsuwp-content-syndicate-list li.wsuwp-content-syndicate-event:before {
+	display: none;
+}
+
+.wsuwp-content-syndicate-event .content-item-event-title {
+	font-size: 20px;
+	line-height: 1.3;
+	padding-top: .5em;
+}
+
+li.wsuwp-content-syndicate-event {
+	padding-bottom: 1.5em;
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+.content-item-event-meta {
+	display: none;
 }
 
 form {
@@ -1052,10 +1141,9 @@ footer.site-footer nav ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: space-evenly;
-	    -ms-flex-pack: space-evenly;
-	        justify-content: space-evenly;
-	padding-left: 0;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	padding-left: 1em;
 	padding-top: .5em;
 }
 
@@ -1210,6 +1298,11 @@ footer.site-footer .social a svg:hover #twitter {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	.spacing-loose .side-right.gutter.show-hide .column.one:not(.gutterless) {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
 }
 
 @media (max-width: 490px) {
@@ -1290,5 +1383,90 @@ footer.site-footer .social a svg:hover #twitter {
 	font-size: .875em;
 	font-weight: 400;
 	padding: 0 1rem 1rem;
+}
+
+.wsu-people-filter.search {
+	margin-bottom: 2em;
+}
+
+.grid .wsu-people .wsu-person .photo {
+	width: calc(100% + 2rem);
+	max-width: none;
+	padding: 0;
+}
+
+.wsu-person .photo a {
+	position: static;
+	display: block;
+}
+
+.wsu-person .photo a:before,
+.wsu-person .photo a:after {
+	content: none;
+}
+
+.grid .photo img {
+	position: relative;
+}
+
+.person-card-contact {
+	font-size: 100%;
+}
+
+.wsu-people-filters .search input,
+.wsuwp-people-wrapper .wsuwp-people-filters .search input {
+	height: 54px;
+}
+
+.wsuwp-people-filters {
+	box-sizing: border-box;
+	padding: 0 1rem;
+}
+
+@media only screen and (max-width: 693px) {
+
+	.person-card {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.wsuwp-people-wrapper {
+		display: block;
+	}
+
+	.person-card {
+		width: 100%;
+	}
+}
+
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
+	border-bottom: none;
+}
+
+.post-type-archive-tribe_events .article-header,
+.single-tribe_events .article-header,
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:before,
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:after,
+#tribe-events .tribe-events-button:before,
+.tribe-events-button:before,
+#tribe-events .tribe-events-button:after,
+.tribe-events-button:after {
+	display: none;
+}
+
+.tribe-bar-views-list li:before {
+	display: none;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type="submit"] {
+	background: #d72216;
+	transition: all .3s ease;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type="submit"]:hover {
+	background: transparent;
+	color: #ca1237;
 }
 /*# sourceMappingURL=style.css.map */
