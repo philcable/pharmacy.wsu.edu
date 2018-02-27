@@ -8,7 +8,8 @@ input[type="password"],
 input[type="text"],
 select,
 textarea,
-.wsu-people-filters .search input {
+.wsu-people-filters .search input,
+.wsuwp-people-filters .search input {
 	background: #f2f2f2;
 	border-top: 0;
 	border-right: 0;
@@ -25,7 +26,8 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="text"]:focus,
 textarea:focus,
-.wsu-people-filters .search input:focus {
+.wsu-people-filters .search input:focus,
+.wsuwp-people-filters .search input:focus {
 	box-shadow: none;
 	border-top: 0;
 	border-right: 0;
@@ -34,8 +36,15 @@ textarea:focus,
 	border-radius: 0;
 }
 
-.wsu-people-filters .search input {
+.wsu-people-filters .search input,
+.wsuwp-people-filters .search input,
+.wsuwp-people-filters,
+.wsuwp-people-filter {
 	width: 100%;
+}
+
+.wsuwp-people-filters .search input::placeholder {
+	font-style: italic;
 }
 
 .button,
