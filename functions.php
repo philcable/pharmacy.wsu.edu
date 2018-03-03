@@ -15,7 +15,7 @@ add_filter( 'nav_menu_css_class', 'pharmacy_menu_classes', 11, 3 );
  * @return string
  */
 function pharmacy_theme_version() {
-	return '0.2.7';
+	return '0.2.8';
 }
 
 /**
