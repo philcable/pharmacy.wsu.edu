@@ -58,6 +58,7 @@ figure a {
 	height: 0;
 	width: 100%;
 	padding-bottom: 56.25%;
+	position: relative;
 	z-index: 1;
 }
 
@@ -67,7 +68,6 @@ figure a {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 2.3em;
 	width: 100%;
 	height: 100%;
 }
@@ -76,8 +76,8 @@ figure a {
 	margin-top: 3em;
 }
 
-.spacing-loose .single.gutter.video-wrap  .column:not(.gutterless) {
-	padding-left: 0;
+.spacing-loose .single.gutter.video-wrap .column:not(.gutterless) {
+	padding-right: 0;
 }
 
 .video-wrap.img-mid-feature {
@@ -86,7 +86,7 @@ figure a {
 
 .video-wrap header {
 	position: absolute;
-	margin: 0 0 0 8em;
+	margin: 0 0 0 4em;
 	padding: 0;
 	z-index: 3;
 	top: 40%;
