@@ -108,7 +108,7 @@ module.exports = function( grunt ) {
 				options: {
 					open: "http://localhost:8000/style-guide/home.html",
 					port: 8000,
-					hostname: "localhost"
+					hostname: "*"
 				}
 			}
 		}
