@@ -62,14 +62,15 @@ function pharmacy_menu_classes( $classes, $item, $args ) {
 
 	// Modify classes for Community Events page views.
 	if ( tribe_is_community_edit_event_page() || tribe_is_community_my_events_page() ) {
-		$add_event_page_url = trailingslashit( tribe_community_events_add_event_link() );
 
-		// Remove classes from the Posts page (falsely has `active` set).
+		// Remove classes from the Posts page.
 		if ( $item_url === $posts_page_url ) {
 			$classes = array();
 		}
 
-		// Add the `active` class to the add event page when we're on the "My Events" page.
+		$add_event_page_url = trailingslashit( tribe_community_events_add_event_link() );
+
+		// Add the `active` class to the add event page for "My Events" page views.
 		if ( tribe_is_community_my_events_page() && $item_url === $add_event_page_url ) {
 			$classes[] = 'active';
 		}
@@ -79,6 +80,8 @@ function pharmacy_menu_classes( $classes, $item, $args ) {
 
 	// Modify classes for individual people profile views.
 	if ( is_singular( 'wsuwp_people_profile' ) ) {
+
+		// Remove classes from the Posts page.
 		if ( $item_url === $posts_page_url ) {
 			$classes = array();
 		}
@@ -86,6 +89,7 @@ function pharmacy_menu_classes( $classes, $item, $args ) {
 		$object_id = get_post_meta( $item->ID, '_menu_item_object_id', true );
 		$object_template = get_page_template_slug( $object_id );
 
+		// Add the `active` class to the page using the directory template.
 		if ( 'templates/people.php' === $object_template ) {
 			$classes[] = 'active';
 		}
