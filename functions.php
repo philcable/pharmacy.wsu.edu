@@ -42,7 +42,7 @@ function pharmacy_people_rewrite_arguments( $rewrite ) {
 }
 
 /**
- * Filter menu item classes for Community Events pages.
+ * Filter menu item classes for Community Events pages and people profiles.
  *
  * @param array    $classes Current list of nav menu classes.
  * @param WP_Post  $item    Post object representing the menu item.
@@ -56,24 +56,41 @@ function pharmacy_menu_classes( $classes, $item, $args ) {
 		return $classes;
 	}
 
-	// Bail if we're not on a Community Events page.
-	if ( ! tribe_is_community_edit_event_page() && ! tribe_is_community_my_events_page() ) {
-		return $classes;
-	}
-
 	// Run applicable URLs through `trailingslashit` just to be safe.
 	$item_url = trailingslashit( $item->url );
 	$posts_page_url = trailingslashit( get_permalink( get_option( 'page_for_posts' ) ) );
-	$add_event_page_url = trailingslashit( tribe_community_events_add_event_link() );
 
-	// Remove classes from the Posts page (falsely has `active` set).
-	if ( $item_url === $posts_page_url ) {
-		$classes = array();
+	// Modify classes for Community Events page views.
+	if ( tribe_is_community_edit_event_page() || tribe_is_community_my_events_page() ) {
+		$add_event_page_url = trailingslashit( tribe_community_events_add_event_link() );
+
+		// Remove classes from the Posts page (falsely has `active` set).
+		if ( $item_url === $posts_page_url ) {
+			$classes = array();
+		}
+
+		// Add the `active` class to the add event page when we're on the "My Events" page.
+		if ( tribe_is_community_my_events_page() && $item_url === $add_event_page_url ) {
+			$classes[] = 'active';
+		}
+
+		return $classes;
 	}
 
-	// Add the `active` class to the add event page when we're on the "My Events" page.
-	if ( tribe_is_community_my_events_page() && $item_url === $add_event_page_url ) {
-		$classes[] = 'active';
+	// Modify classes for individual people profile views.
+	if ( is_singular( 'wsuwp_people_profile' ) ) {
+		if ( $item_url === $posts_page_url ) {
+			$classes = array();
+		}
+
+		$object_id = get_post_meta( $item->ID, '_menu_item_object_id', true );
+		$object_template = get_page_template_slug( $object_id );
+
+		if ( 'templates/people.php' === $object_template ) {
+			$classes[] = 'active';
+		}
+
+		return $classes;
 	}
 
 	return $classes;
