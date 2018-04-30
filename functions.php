@@ -6,6 +6,7 @@ add_filter( 'spine_child_theme_version', 'pharmacy_theme_version' );
 add_action( 'init', 'pharmacy_register_footer_menu' );
 add_filter( 'wsuwp_people_default_rewrite_slug', 'pharmacy_people_rewrite_arguments' );
 add_filter( 'nav_menu_css_class', 'pharmacy_menu_classes', 11, 3 );
+add_filter( 'the_title', 'pharmacy_people_degrees', 10, 2 );
 
 /**
  * Provides a theme version for use in cache busting.
@@ -98,4 +99,36 @@ function pharmacy_menu_classes( $classes, $item, $args ) {
 	}
 
 	return $classes;
+}
+
+/**
+ * Filters the title of People posts to include degrees.
+ *
+ * @since 0.2.10
+ *
+ * @param string $title The post title.
+ * @param int    $id    The post ID.
+ *
+ * @return string
+ */
+function pharmacy_people_degrees( $title, $id ) {
+	if ( ! in_the_loop() ) {
+		return $title;
+	}
+
+	if ( ! is_singular( 'wsuwp_people_profile' ) || ! $id ) {
+		return $title;
+	}
+
+	$nid = get_post_meta( $id, '_wsuwp_profile_ad_nid', true );
+	$person = WSUWP_People_Post_Type::get_rest_data( $nid );
+	$display = WSUWP_Person_Display::get_data( $person, array() );
+
+	if ( $display['degrees'] && is_array( $display['degrees'] ) ) {
+		foreach ( $display['degrees'] as $degree ) {
+			$title .= '<span class="degree">, ' . esc_html( $degree ) . '</span>';
+		}
+	}
+
+	return $title;
 }
