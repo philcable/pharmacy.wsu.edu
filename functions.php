@@ -16,7 +16,7 @@ add_filter( 'the_title', 'pharmacy_people_degrees', 10, 2 );
  * @return string
  */
 function pharmacy_theme_version() {
-	return '0.2.9';
+	return '0.2.10';
 }
 
 /**
