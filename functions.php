@@ -111,7 +111,7 @@ function pharmacy_menu_classes( $classes, $item, $args ) {
  *
  * @return string
  */
-function pharmacy_people_degrees( $title, $id ) {
+function pharmacy_people_degrees( $title, $id = null ) {
 	if ( ! in_the_loop() ) {
 		return $title;
 	}
