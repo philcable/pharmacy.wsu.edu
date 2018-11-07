@@ -8,6 +8,20 @@ add_filter( 'wsuwp_people_default_rewrite_slug', 'pharmacy_people_rewrite_argume
 add_filter( 'nav_menu_css_class', 'pharmacy_menu_classes', 11, 3 );
 add_filter( 'the_title', 'pharmacy_people_degrees', 10, 2 );
 
+add_action( 'wp_footer', 'add_retargetting', 9999 );
+
+
+/**
+ * Adds retargetting code to pharmacy pages and posts
+ * 
+ * @since 0.2.12
+ */
+function add_retargetting() {
+
+	include __DIR__ . '/js/retarget.html';
+
+} // End add_retargetting
+
 /**
  * Provides a theme version for use in cache busting.
  *
